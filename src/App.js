@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from "./Home/Home"
+import Testimonial from './Testimonial/Testimonial';
+import Video from "./Video/Video"
+import Features from "./Features/Features"
+import About from "./About/About"
+import Footer from  "./Footer/Footer"
+import { Grid } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Grid fluid>
+      <Home />
+       <Video />
+      <Testimonial />
+      <Features />
+      <About />
+      <Footer /> 
+    </Grid>
+    </>
   );
 }
 
